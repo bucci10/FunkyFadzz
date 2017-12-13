@@ -1,0 +1,63 @@
+﻿@model IEnumerable<FunkyFadz.Models.FunkyFadzListModel>
+
+@{ 
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@if (TempData.ContainsKey("SaveResult"))
+{
+
+<div class="alert alert-success fade in" role="alert">
+    @ViewBag.SaveResult
+    <button type="button" class="close" data-dismiss="alert">
+        <span>&times;</span>
+    </button>
+    @TempData["SaveResult"]
+</div>
+}
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FunkyFadzId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FadType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Year)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedUtc)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FunkyFadzId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FadType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Year)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatedUtc)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new {  id=item.FunkyFadzId}) |
+            @Html.ActionLink("Details", "Details", new { id=item.FunkyFadzId}) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.FunkyFadzId})
+        </td>
+    </tr>
+}
+
+</table>
