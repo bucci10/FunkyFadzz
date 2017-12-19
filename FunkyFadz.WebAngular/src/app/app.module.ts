@@ -17,6 +17,7 @@ import { RegistrationComponent } from './components/registration/registration.co
 import { AuthService } from './services/auth.service';
 import { LoginComponent } from './components/login/login.component';
 import { FunkyFadzService } from './services/funky-fadz.service';
+import { FunkyFadzIndexComponent } from './components/funky-fadz/funky-fadz-index/funky-fadz-index.component';
 
 const routes = [
   { path: 'register', component: RegistrationComponent },
@@ -29,7 +30,8 @@ const routes = [
     AppComponent,
     HeaderComponent,
     RegistrationComponent,
-    LoginComponent
+    LoginComponent,
+    FunkyFadzIndexComponent
   ],
   imports: [
     BrowserModule,
