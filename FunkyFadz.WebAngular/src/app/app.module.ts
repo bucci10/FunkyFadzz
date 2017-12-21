@@ -18,10 +18,12 @@ import { AuthService } from './services/auth.service';
 import { LoginComponent } from './components/login/login.component';
 import { FunkyFadzService } from './services/funky-fadz.service';
 import { FunkyFadzIndexComponent } from './components/funky-fadz/funky-fadz-index/funky-fadz-index.component';
+import { Component } from '@angular/core/src/metadata/directives';
 
 const routes = [
   { path: 'register', component: RegistrationComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'funkyfadz', component: FunkyFadzIndexComponent},
   { path: '**', component: RegistrationComponent }
 ]
 

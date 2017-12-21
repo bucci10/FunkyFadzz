@@ -34,7 +34,7 @@ namespace FunkyFadz.WebMVC.Controllers
 
 
         // GET: FunkyFadz
-        [AllowAnonymous]
+        [Authorize]
         public ActionResult Index()
         {
             var model = _funkyFadzService.Value.GetFunkyFadz();
@@ -63,7 +63,7 @@ namespace FunkyFadz.WebMVC.Controllers
             };
 
 
-            ModelState.AddModelError("", "Your Fad could not be created :(.");
+            ModelState.AddModelError("", "Your Fad could not be created. :(.");
 
             return View(model);
 
@@ -149,5 +149,6 @@ namespace FunkyFadz.WebMVC.Controllers
             return service;
         }
 
+       
     }
 }

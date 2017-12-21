@@ -7,7 +7,7 @@ import { Observable } from 'rxjs/Observable';
 import { HttpHeaderResponse } from '@angular/common/http/src/response';
 import { Subject } from 'rxjs/Subject';
 
-const Api_Url = 'http://kcpelevennoteapie.azurewebsites.net';
+const Api_Url = 'http://localhost:51110';
 
 @Injectable()
 export class AuthService {
@@ -28,7 +28,7 @@ export class AuthService {
       this.userInfo = token;
       localStorage.setItem('id_token', token.access_token);
       this.isLoggedIn.next(true);
-      this._router.navigate(['/']);
+      this._router.navigate(['/funkyfadz']);
       console.log(token.access_token);
     });
   }

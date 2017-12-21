@@ -22,3 +22,14 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.landing-image {
+    background: linear-gradient(rgba(25,100,126,0.3),rgba(25,100,126,0.3)),url("https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1484262136000/photosp/e0c24449-30a9-4a4b-8b6f-be74d2474e85/stock-photo-no-filter-china-lights-zoo-antwerp-funky-lights-e0c24449-30a9-4a4b-8b6f-be74d2474e85.jpg");
+    -ms-background-size: cover;
+    background-size: cover;
+    height: 500px;
+}
+
+.table-hover > tbody > tr:hover {
+    background-color: InactiveCaptionText;
+}
