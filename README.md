@@ -34,3 +34,9 @@ I wanted to build a website that gathers together all the Funky Fadz from any gi
 #### Screen Recording of App
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=v8XkjUWdTJY" target="_blank"><img src="http://img.youtube.com/vi/N5dREewlB0k/0.jpg" 
 alt="YouTube Demo of Save The Parents" width="240" height="180" border="10" /></a>
+
+
+#### Contact Me!
+
+Ciprian Buciumean
+cnbucium@gmail.com
