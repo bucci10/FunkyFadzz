@@ -25,6 +25,8 @@ I wanted to build a website that gathers together all the Funky Fadz from any gi
 
 #### Postman Funky Captures 
 
+- Captures of Token, Get, and Post. 
+
 ![GitHub Logo](/Images/Token.JPG)
 ![GitHub Logo](/Images/APIFunkyFadz.JPG)
 ![GitHub Logo](/Images/POSTfunkyFadz.JPG)
